@@ -27,10 +27,6 @@
       src: 'CINDYLONG WEAVE.png',
       alt: 'Cindy Long braid overlay',
     },
-    'x-braid': {
-      src: 'Photos/Braids/Screenshot%202025-11-07%20at%208.09.47%E2%80%AFPM.png',
-      alt: 'X-Braid protective style overlay',
-    },
     'yaki-braid': {
       src: 'YAKI BRAID.png',
       alt: 'Yaki Braid overlay with colored tips',
@@ -46,10 +42,6 @@
     topiaz: {
       src: 'TOPIAZ WEAVE.png',
       alt: 'Topiaz weave overlay',
-    },
-    overlayhair1: {
-      src: 'overlayhair1.png',
-      alt: 'Custom overlay hair test',
     },
   };
   let tryonHasPhoto = false;
