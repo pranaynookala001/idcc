@@ -28,7 +28,7 @@
       alt: 'Cindy Long braid overlay',
     },
     'x-braid': {
-      src: 'photos/Braids/Screenshot%202025-11-07%20at%208.09.47%E2%80%AFPM.png',
+      src: 'Photos/Braids/Screenshot%202025-11-07%20at%208.09.47%E2%80%AFPM.png',
       alt: 'X-Braid protective style overlay',
     },
     'yaki-braid': {
@@ -36,7 +36,7 @@
       alt: 'Yaki Braid overlay with colored tips',
     },
     'euro-straight': {
-      src: 'photos/Weaves/Screenshot%202025-11-07%20at%208.10.36%E2%80%AFPM.png',
+      src: 'Photos/Weaves/Screenshot%202025-11-07%20at%208.10.36%E2%80%AFPM.png',
       alt: 'Euro Straight weave overlay',
     },
     'bumper-curl': {
