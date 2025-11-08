@@ -31,10 +31,6 @@
       src: 'YAKI BRAID.png',
       alt: 'Yaki Braid overlay with colored tips',
     },
-    'euro-straight': {
-      src: 'Photos/Weaves/Screenshot%202025-11-07%20at%208.10.36%E2%80%AFPM.png',
-      alt: 'Euro Straight weave overlay',
-    },
     'bumper-curl': {
       src: 'BUMPER CURL WEAVE.png',
       alt: 'Bumper Curl weave overlay',
