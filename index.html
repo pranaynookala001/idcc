@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laplex Atelier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">Laplex</div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#customers">Customers</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="cart-toggle" type="button" aria-haspopup="dialog" aria-expanded="false">
+        Bag · <span data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="tagline">Laplex</p>
+        <h1>Everyday protective styles, elevated.</h1>
+        <p>
+          Laplex Atelier is a local synthetic hair manufacturer based in Harare, Zimbabwe. We design everyday braids, waves, and wigs with salons and shoppers who style often in mind.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#products">See products</a>
+          <a class="btn outline" href="#contact">Talk to us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="section-heading">
+        <h2>Welcome to Laplex</h2>
+        <p>We’re dedicated to keeping protective styles accessible while supporting stylists across Zimbabwe.</p>
+      </div>
+      <div class="about-grid">
+        <article>
+          <h3>Local manufacturing</h3>
+          <p>Every braid, bundle, and wig is produced in our facility using durable synthetic fibers tuned for daily wear.</p>
+        </article>
+        <article>
+          <h3>Salon partnerships</h3>
+          <p>We collaborate with salons and stylists nationwide, helping them restock fast-moving, affordable looks.</p>
+        </article>
+        <article>
+          <h3>Retail presence</h3>
+          <p>Our storefronts in Zimbabwe’s major cities carry the full Laplex line so regular stylers can grab refills close to home.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="customers" class="audience">
+      <div class="section-heading">
+        <h2>Who we style</h2>
+        <p>Laplex serves women aged 16–60 who refresh their look frequently.</p>
+      </div>
+      <div class="audience-content">
+        <p>Most of our customers replace braids or waves every 2–4 weeks. They trust us for dependable quality, quick installs at their local salon, and pricing that fits a regular styling routine.</p>
+        <ul>
+          <li>Weekly and monthly stylers needing reliable restocks.</li>
+          <li>Salon clients looking for soft fiber that holds up between visits.</li>
+          <li>Retail shoppers in Harare, Bulawayo, and other major cities.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="section-heading">
+        <h2>Main product categories</h2>
+        <p>Focused on everyday essentials that move fast for stylists and repeat customers.</p>
+      </div>
+      <div class="product-groups">
+        <article class="product-group">
+          <header>
+            <h3>Braids</h3>
+            <p>Our best-selling synthetic braid packs are designed for salon installs and typically worn for 2–3 weeks.</p>
+          </header>
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Braids/Screenshot%202025-11-07%20at%208.09.19%E2%80%AFPM.png"
+                  alt="Cindy Long braid pack example"
+                />
+                <div class="product-info">
+                  <h4>Cindy Long</h4>
+                  <p class="product-detail">24" length • Colors: Black, Silver Ombre</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$1.79</span>
+                <button class="btn add-to-cart" type="button" data-product="Cindy Long" data-price="1.79" data-category="Braids">Add to bag</button>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Braids/Screenshot%202025-11-07%20at%208.09.47%E2%80%AFPM.png"
+                  alt="X-Braid protective style example"
+                />
+                <div class="product-info">
+                  <h4>X-Braid</h4>
+                  <p class="product-detail">22" length • Colors: Black, Honey Blonde</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$2.09</span>
+                <button class="btn add-to-cart" type="button" data-product="X-Braid" data-price="2.09" data-category="Braids">Add to bag</button>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Braids/Screenshot%202025-11-07%20at%208.09.53%E2%80%AFPM.png"
+                  alt="Yaki Braid multi-pack example"
+                />
+                <div class="product-info">
+                  <h4>Yaki Braid</h4>
+                  <p class="product-detail">Full head (3 packs) • Colors: Black with Accents</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$4.19</span>
+                <button class="btn add-to-cart" type="button" data-product="Yaki Braid" data-price="4.19" data-category="Braids">Add to bag</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="product-group">
+          <header>
+            <h3>Waves &amp; Weaves</h3>
+            <p>Synthetic sew-in bundles that last up to a month when installed onto braided sections.</p>
+          </header>
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Weaves/Screenshot%202025-11-07%20at%208.10.36%E2%80%AFPM.png"
+                  alt="Euro Straight weave example"
+                />
+                <div class="product-info">
+                  <h4>Euro Straight</h4>
+                  <p class="product-detail">14" length • Color: Deep Burgundy</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$2.39</span>
+                <button class="btn add-to-cart" type="button" data-product="Euro Straight" data-price="2.39" data-category="Waves & Weaves">Add to bag</button>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Weaves/Screenshot%202025-11-07%20at%208.10.44%E2%80%AFPM.png"
+                  alt="Bumper Curl weave example"
+                />
+                <div class="product-info">
+                  <h4>Bumper Curl</h4>
+                  <p class="product-detail">18" length • Color: Rich Brown</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$3.05</span>
+                <button class="btn add-to-cart" type="button" data-product="Bumper Curl" data-price="3.05" data-category="Waves & Weaves">Add to bag</button>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Weaves/Screenshot%202025-11-07%20at%208.10.51%E2%80%AFPM.png"
+                  alt="Topiaz weave example"
+                />
+                <div class="product-info">
+                  <h4>Topiaz</h4>
+                  <p class="product-detail">16" length • Color: Golden Blonde</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$2.69</span>
+                <button class="btn add-to-cart" type="button" data-product="Topiaz" data-price="2.69" data-category="Waves & Weaves">Add to bag</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="product-group optional">
+          <header>
+            <h3>Wigs</h3>
+            <p>A smaller, ready-to-wear range for customers who prefer cap styles without a salon visit.</p>
+          </header>
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Wigs/Screenshot%202025-11-07%20at%208.11.07%E2%80%AFPM.png"
+                  alt="Straight bob wig example"
+                />
+                <div class="product-info">
+                  <h4>ComfortFit Straight Bob</h4>
+                  <p class="product-detail">12" length • Sleek everyday finish</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$4.19</span>
+                <button class="btn add-to-cart" type="button" data-product="ComfortFit Straight Bob" data-price="4.19" data-category="Wigs">Add to bag</button>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-main">
+                <img
+                  class="product-thumb"
+                  src="photos/Wigs/Screenshot%202025-11-07%20at%208.11.23%E2%80%AFPM.png"
+                  alt="Natural curl wig example"
+                />
+                <div class="product-info">
+                  <h4>Everyday Natural Curl Wig</h4>
+                  <p class="product-detail">14" length • Soft textured curls</p>
+                </div>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">$4.99</span>
+                <button class="btn add-to-cart" type="button" data-product="Everyday Natural Curl Wig" data-price="4.99" data-category="Wigs">Add to bag</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="section-heading">
+        <h2>Atelier lookbook</h2>
+        <p>Preview recent protective styles photographed in our Laplex studios.</p>
+      </div>
+      <div class="gallery-grid">
+        <img src="photos/Braids/Screenshot%202025-11-07%20at%208.09.47%E2%80%AFPM.png" alt="Laplex X-Braid look with honey blonde ropes" />
+        <img src="photos/Weaves/Screenshot%202025-11-07%20at%208.10.44%E2%80%AFPM.png" alt="Laplex Bumper Curl weave with soft waves" />
+        <img src="photos/Wigs/Screenshot%202025-11-07%20at%208.11.07%E2%80%AFPM.png" alt="Laplex straight bob wig" />
+        <img src="photos/Wigs/Screenshot%202025-11-07%20at%208.11.14%E2%80%AFPM.png" alt="Laplex natural curl wig" />
+      </div>
+    </section>
+
+    <section id="try-on" class="tryon">
+      <div class="section-heading">
+        <h2>Virtual try-on</h2>
+        <p>Upload a portrait and layer any Laplex braid or weave pack to preview the look.</p>
+      </div>
+      <div class="tryon-body">
+        <div class="tryon-controls">
+          <label class="tryon-upload">
+            <span>Upload your photo</span>
+            <input type="file" accept="image/*" data-tryon-upload />
+          </label>
+          <fieldset class="tryon-options">
+            <legend>Select a style</legend>
+            <label>
+              <input type="radio" name="tryon-style" value="cindy-long" data-style />
+              <span>Cindy Long</span>
+            </label>
+            <label>
+              <input type="radio" name="tryon-style" value="x-braid" data-style />
+              <span>X-Braid</span>
+            </label>
+            <label>
+              <input type="radio" name="tryon-style" value="yaki-braid" data-style />
+              <span>Yaki Braid</span>
+            </label>
+            <label>
+              <input type="radio" name="tryon-style" value="euro-straight" data-style />
+              <span>Euro Straight</span>
+            </label>
+            <label>
+              <input type="radio" name="tryon-style" value="bumper-curl" data-style />
+              <span>Bumper Curl</span>
+            </label>
+            <label>
+              <input type="radio" name="tryon-style" value="topiaz" data-style />
+              <span>Topiaz</span>
+            </label>
+            <label>
+              <input type="radio" name="tryon-style" value="overlayhair1" data-style />
+              <span>Overlay Test</span>
+            </label>
+          </fieldset>
+          <div class="tryon-tuners">
+            <label>
+              <span>Scale</span>
+              <input type="range" min="60" max="160" value="100" data-tryon-scale />
+            </label>
+            <label>
+              <span>Vertical</span>
+              <input type="range" min="-150" max="150" value="0" data-tryon-offset-y />
+            </label>
+            <label>
+              <span>Horizontal</span>
+              <input type="range" min="-150" max="150" value="0" data-tryon-offset-x />
+            </label>
+          </div>
+          <button type="button" class="btn outline tryon-reset" data-tryon-reset>Reset</button>
+          <p class="tryon-note">Tip: use a front-facing photo on a plain background for best results.</p>
+        </div>
+        <div class="tryon-preview">
+          <div class="tryon-stage">
+            <img class="tryon-photo" data-tryon-photo hidden alt="Uploaded portrait preview" />
+            <img class="tryon-overlay" data-tryon-overlay hidden alt="Selected hairstyle overlay" />
+            <p class="tryon-placeholder" data-tryon-placeholder>Upload a photo to start your virtual try-on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="section-heading">
+        <h2>How we work</h2>
+        <p>Clear steps so you always know what happens next.</p>
+      </div>
+      <ol>
+        <li><span>1.</span> Choose a look or send a reference picture.</li>
+        <li><span>2.</span> We chat about fit, colour, and timing within 24 hours.</li>
+        <li><span>3.</span> You receive your style ready-to-wear with care notes inside.</li>
+      </ol>
+    </section>
+
+    <section id="data" class="dashboard">
+      <div class="section-heading">
+        <h2>Client performance dashboard</h2>
+        <p>Week ending November 3. Mock data refreshed hourly for the Laplex retail network.</p>
+      </div>
+
+      <div class="dashboard-metrics">
+        <article class="metric-card">
+          <header>
+            <p class="metric-label">Trending sales</p>
+            <span class="metric-badge positive">+12.4%</span>
+          </header>
+          <strong class="metric-value">$81K</strong>
+          <p class="metric-subtle">Last 7 days vs. prior period</p>
+          <svg class="metric-chart" viewBox="0 0 120 40" role="img" aria-label="Sales trending upward">
+            <polyline points="0,32 15,28 30,30 45,22 60,18 75,20 90,12 105,6 120,10" />
+          </svg>
+        </article>
+
+        <article class="metric-card">
+          <header>
+            <p class="metric-label">Sales revenue</p>
+            <span class="metric-badge neutral">FY to date</span>
+          </header>
+          <strong class="metric-value">$3.9M</strong>
+          <p class="metric-subtle">Average order value $42.65</p>
+          <div class="metric-progress">
+            <div class="metric-progress-bar" style="--progress: 68%;" aria-hidden="true"></div>
+            <p class="metric-progress-copy"><span>68%</span> of $6.2M yearly goal</p>
+          </div>
+        </article>
+
+        <article class="metric-card">
+          <header>
+            <p class="metric-label">Website traffic</p>
+            <span class="metric-badge positive">+8.1%</span>
+          </header>
+          <strong class="metric-value">92.4K</strong>
+          <p class="metric-subtle">Sessions · 34% from social · 4.2% conv.</p>
+          <svg class="metric-chart traffic" viewBox="0 0 120 40" role="img" aria-label="Traffic trend">
+            <polyline points="0,24 15,18 30,26 45,16 60,12 75,18 90,10 105,14 120,8" />
+          </svg>
+        </article>
+
+        <article class="metric-card">
+          <header>
+            <p class="metric-label">Return order rate</p>
+            <span class="metric-badge caution">Watch</span>
+          </header>
+          <strong class="metric-value">2.7%</strong>
+          <p class="metric-subtle">Target &lt; 3%. Lace-front shedding flagged.</p>
+          <div class="metric-progress caution">
+            <div class="metric-progress-bar" style="--progress: 54%;" aria-hidden="true"></div>
+            <p class="metric-progress-copy"><span>54</span> returns of 1,980 orders</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="dashboard-breakdown">
+        <article class="breakdown-card">
+          <h3>Age distribution</h3>
+          <ul class="bar-list" role="list">
+            <li>
+              <span>18–24</span>
+              <div class="bar"><span style="--value: 32%"></span></div>
+              <strong>32%</strong>
+            </li>
+            <li>
+              <span>25–34</span>
+              <div class="bar"><span style="--value: 41%"></span></div>
+              <strong>41%</strong>
+            </li>
+            <li>
+              <span>35–44</span>
+              <div class="bar"><span style="--value: 17%"></span></div>
+              <strong>17%</strong>
+            </li>
+            <li>
+              <span>45+</span>
+              <div class="bar"><span style="--value: 10%"></span></div>
+              <strong>10%</strong>
+            </li>
+          </ul>
+        </article>
+
+        <article class="breakdown-card">
+          <h3>Gender mix</h3>
+          <div class="stacked-bar">
+            <span class="stack female" style="--segment: 66%">Women · 66%</span>
+            <span class="stack male" style="--segment: 24%">Men · 24%</span>
+            <span class="stack nonbinary" style="--segment: 10%">Non-binary · 10%</span>
+          </div>
+          <p class="metric-subtle">Higher growth in first-time male shoppers (+18%).</p>
+        </article>
+
+        <article class="breakdown-card">
+          <h3>Top pickup locations</h3>
+          <ol class="location-list">
+            <li>
+              <div>
+                <strong>Harare CBD Hub</strong>
+                <span>Avg. wait 9 min</span>
+              </div>
+              <p>28% of store pickups · +6.3% WoW</p>
+            </li>
+            <li>
+              <div>
+                <strong>Bulawayo Center</strong>
+                <span>Avg. wait 11 min</span>
+              </div>
+              <p>21% of pickups · +4.5% WoW</p>
+            </li>
+            <li>
+              <div>
+                <strong>Chitungwiza Express</strong>
+                <span>Avg. wait 7 min</span>
+              </div>
+              <p>14% of pickups · +2.1% WoW</p>
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-heading">
+        <h2>Let’s plan your next style</h2>
+        <p>Leave your email and we’ll reach out with suggestions based on your lifestyle and budget.</p>
+      </div>
+      <form class="contact-form">
+        <label class="sr-only" for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="Email address" required />
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+      <p class="contact-note">Prefer chat? Message us on WhatsApp at +263 71 234 5678.</p>
+    </section>
+  </main>
+
+  <div class="cart-backdrop" data-cart-backdrop hidden></div>
+  <aside class="cart-panel" aria-hidden="true" aria-labelledby="cart-heading" role="dialog">
+    <div class="cart-panel-inner">
+      <header class="cart-panel-header">
+        <h2 id="cart-heading">Shopping bag</h2>
+        <button class="cart-close" type="button" aria-label="Close bag">&times;</button>
+      </header>
+      <div class="cart-panel-body">
+        <p class="cart-empty" data-cart-empty>Your bag is empty. Add a braid, bundle, or wig to get started.</p>
+        <ul class="cart-items" data-cart-items></ul>
+      </div>
+      <footer class="cart-panel-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong data-cart-total>$0.00</strong>
+        </div>
+        <button class="btn primary checkout-btn" type="button" data-cart-checkout disabled>Checkout</button>
+      </footer>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p class="brand">Laplex Atelier</p>
+    <p class="footer-copy">Local hands, modern flair.</p>
+    <p class="footer-meta">© 2025 Laplex Atelier. Made in Harare with heart.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
